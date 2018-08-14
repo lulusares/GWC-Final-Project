@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="schedule.css">
+    <script src="schedulecopy.js"></script>
+  </head>
+  <body>
+    <!--    Made by Erik Terwan    -->
+    <!--   24th of November 2015   -->
+    <!--        MIT License        -->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--A fake/hidden checkbox is used as click reciever,so you can use the :checked selector on it.-->
+        <input type="checkbox" />
+        <!--Some spans to act as a hamburger.-->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!--the menu has to be inside of the button-->
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>De-Stress</li></a>
+          <a href="#"><li>AP Prep</li></a>
+          <a href="#"><li>Time Management</li></a>
+          <a href="#"><li>Schedule</li></a>
+        </ul>
+      </div>
+    </nav>
+  <center>
+  <div class = "content">
+    <div class ="intro">
+      <h1>GYST</h1>
+      <h2>Click the right arrow below to edit your schedule!</h2>
+    </div>
+    <table class="days">
+      <tr>
+        <th colspan="2" height="100">Sunday Schedule</th>
+      </tr>
+      <tr>
+        <td class="time">Time</td>
+        <td class="ec">Event</td>
+      </tr>
+      <tr>
+        <td class="time">6:00 AM</td>
+        <td class ="ec"><button type = "button" id = "Sunday6" onclick = "popupS6()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">7:00 AM</td>
+        <td class="ec"><button type = "button" id = "Sunday7" onclick = "popupS7()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 AM</td>
+        <td class="ec"><button type = "button" id = "Sunday8" onclick = "popupS8()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td class="ec"><button type = "button" id = "Sunday9" onclick = "popupS9()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td class="ec"><button type = "button" id = "Sunday10" onclick = "popupS10()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td class="ec"><button type = "button" id = "Sunday11" onclick = "popupS11()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday12" onclick = "popupS12()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday13" onclick = "popupS13()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday14" onclick = "popupS14()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">3:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday15" onclick = "popupS15()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday16" onclick = "popupS16()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday17" onclick = "popupS17()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">6:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday18" onclick = "popupS18()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">7:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday19" onclick = "popupS19()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday20" onclick = "popupS20()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday21" onclick = "popupS21()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday22" onclick = "popupS22()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 PM</td>
+        <td class="ec"><button type = "button" id = "Sunday23" onclick = "popupS23()" value="Add Event">Add Event</button></td>
+      </tr>
+    </table>
+
+    <table class="days">
+      <tr>
+        <th colspan="2" height="100">Monday Schedule</th>
+      </tr>
+      <tr>
+        <td class="time">Time</td>
+        <td class="ec">Event</td>
+      </tr>
+      <tr>
+        <td class="time">6:00 AM</td>
+        <td class="ec"><button type = "button" id = "Monday6" onclick = "popupM6()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">7:00 AM</td>
+        <td class="ec"><button type = "button" id = "Monday7" onclick = "popupM7()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 AM</td>
+        <td class="ec"><button type = "button" id = "Monday8" onclick = "popupM8()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td class="ec"><button type = "button" id = "Monday9" onclick = "popupM9()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td class="ec"><button type = "button" id = "Monday10" onclick = "popupM10()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td class="ec"><button type = "button" id = "Monday11" onclick = "popupM11()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday12" onclick = "popupM12()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday13" onclick = "popupM13()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday14" onclick = "popupM14()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">3:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday15" onclick = "popupM15()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday16" onclick = "popupM16()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday17" onclick = "popupM17()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">6:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday18" onclick = "popupM18()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">7:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday19" onclick = "popupM19()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday20" onclick = "popupM20()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday21" onclick = "popupM21()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday22" onclick = "popupM22()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 PM</td>
+        <td class="ec"><button type = "button" id = "Monday23" onclick = "popupM23()" value="Add Event">Add Event</button></td>
+      </tr>
+    </table>
+
+    <table class="days">
+      <tr>
+        <th colspan="2" height="100">Tuesday Schedule</th>
+      </tr>
+      <tr>
+        <td class="time">Time</td>
+        <td class="ec">Event</td>
+      </tr>
+      <tr>
+        <td class="time">6:00 AM</td>
+        <td class="ec"><button type = "button" id = "Tuesday6" onclick = "popupT6()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">7:00 AM</td>
+        <td class="ec"><button type = "button" id = "Tuesday7" onclick = "popupT7()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 AM</td>
+        <td class="ec"><button type = "button" id = "Tuesday8" onclick = "popupT8()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td class="ec"><button type = "button" id = "Tuesday9" onclick = "popupT9()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td class="ec"><button type = "button" id = "Tuesday10" onclick = "popupT10()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td class="ec"><button type = "button" id = "Tuesday11" onclick = "popupT11()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday12" onclick = "popupT12()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday13" onclick = "popupT13()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday14" onclick = "popupT14()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">3:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday15" onclick = "popupT15()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday16" onclick = "popupT16()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday17" onclick = "popupT17()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">6:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday18" onclick = "popupT18()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">7:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday19" onclick = "popupT19()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday20" onclick = "popupT20()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday21" onclick = "popupT21()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday22" onclick = "popupT22()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 PM</td>
+        <td class="ec"><button type = "button" id = "Tuesday23" onclick = "popupT23()" value="Add Event">Add Event</button></td>
+      </tr>
+    </table>
+
+    <table class="days">
+      <tr>
+        <th colspan="2" height="100">Wednesday Schedule</th>
+      </tr>
+      <tr>
+        <td class="time">Time</td>
+        <td class="ec">Event</td>
+      </tr>
+      <tr>
+        <td class="time">6:00 AM</td>
+        <td class="ec"><button type = "button" id = "Wednesday6" onclick = "popupW6()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">7:00 AM</td>
+        <td class="ec"><button type = "button" id = "Wednesday7" onclick = "popupW7()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 AM</td>
+        <td class="ec"><button type = "button" id = "Wednesday8" onclick = "popupW8()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td class="ec"><button type = "button" id = "Wednesday9" onclick = "popupW9()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td class="ec"><button type = "button" id = "Wednesday10" onclick = "popupW10()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td class="ec"><button type = "button" id = "Wednesday11" onclick = "popupW11()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday12" onclick = "popupW12()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday13" onclick = "popupW13()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday14" onclick = "popupW14()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">3:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday15" onclick = "popupW15()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wendesday16" onclick = "popupW16()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday17" onclick = "popupW17()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">6:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday18" onclick = "popupW18()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">7:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday19" onclick = "popupW19()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wendesday20" onclick = "popupW20()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday21" onclick = "popupW21()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday22" onclick = "popupW22()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday23" onclick = "popupW23()" value="Add Event">Add Event</button></td>
+      </tr>
+    </table>
+
+    <table class="days">
+      <tr>
+        <th colspan="2" height="100">Thursday Schedule</th>
+      </tr>
+      <tr>
+        <td class="time">Time</td>
+        <td class="ec">Event</td>
+      </tr>
+      <tr>
+        <td class="time">6:00 AM</td>
+        <td class="ec"><button type = "button" id = "Thursday6" onclick = "popupT6()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">7:00 AM</td>
+        <td class="ec"><button type = "button" id = "Thursday7" onclick = "popupT7()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 AM</td>
+        <td class="ec"><button type = "button" id = "Thursday8" onclick = "popupT8()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td class="ec"><button type = "button" id = "Thursday9" onclick = "popupT9()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td class="ec"><button type = "button" id = "Thursday10" onclick = "popupT10()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td class="ec"><button type = "button" id = "Thursday11" onclick = "popupT11()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday12" onclick = "popupT12()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday13" onclick = "popupT13()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday14" onclick = "popupT14()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">3:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday15" onclick = "popupT15()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday16" onclick = "popupT16()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday17" onclick = "popupT17()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">6:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday18" onclick = "popupT18()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">7:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday19" onclick = "popupT19()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wendesday20" onclick = "popupW20()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday21" onclick = "popupT21()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday22" onclick = "popupT22()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 PM</td>
+        <td class="ec"><button type = "button" id = "Thursday23" onclick = "popupT23()" value="Add Event">Add Event</button></td>
+      </tr>
+    </table>
+
+    <table class="days">
+      <tr>
+        <th colspan="2" height="100">Friday Schedule</th>
+      </tr>
+      <tr>
+        <td class="time">Time</td>
+        <td class="ec">Event</td>
+      </tr>
+      <tr>
+        <td class="time">6:00 AM</td>
+        <td class="ec"><button type = "button" id = "Friday6" onclick = "popupF6()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">7:00 AM</td>
+        <td class="ec"><button type = "button" id = "Friday7" onclick = "popupF7()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class=time>8:00 AM</td>
+        <td class="ec"><button type = "button" id = "Friday8" onclick = "popupF8()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td class="ec"><button type = "button" id = "Friday9" onclick = "popupF9()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td class="ec"><button type = "button" id = "Friday10" onclick = "popupF10()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td class="ec"><button type = "button" id = "Wednesday11" onclick = "popupW11()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday12" onclick = "popupF12()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday13" onclick = "popupF13()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday14" onclick = "popupF14()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">3:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday15" onclick = "popupF15()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday16" onclick = "popupF16()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday17" onclick = "popupF17()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">6:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday18" onclick = "popupF18()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">7:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday19" onclick = "popupF19()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday20" onclick = "popupF20()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday21" onclick = "popupF21()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday22" onclick = "popupF22()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 PM</td>
+        <td class="ec"><button type = "button" id = "Friday23" onclick = "popupF23()" value="Add Event">Add Event</button></td>
+      </tr>
+    </table>
+
+    <table class="days">
+      <tr>
+        <th colspan="2" height="100">Saturday Schedule</th>
+      </tr>
+      <tr>
+        <td class="time">Time</td>
+        <td class="ec">Event</td>
+      </tr>
+      <tr>
+        <td class="time">6:00 AM</td>
+        <td class="ec"><button type = "button" id = "Saturday6" onclick = "popupS6()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">7:00 AM</td>
+        <td class="ec"><button type = "button" id = "Saturday7" onclick = "popupS7()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 AM</td>
+        <td class="ec"><button type = "button" id = "Saturday8" onclick = "popupS8()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td class="ec"><button type = "button" id = "Saturday9" onclick = "popupS9()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td class="ec"><button type = "button" id = "Saturday10" onclick = "popupS10()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td class="ec"><button type = "button" id = "Saturday11" onclick = "popupS11()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday12" onclick = "popupS12()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday13" onclick = "popupS13()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday14" onclick = "popupS14()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">3:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday15" onclick = "popupS15()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday16" onclick = "popupS16()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday17" onclick = "popupS17()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">6:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday18" onclick = "popupS18()" value="Add Event">Add Event</button></td>
+      </tr>
+        <td class="time">7:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday19" onclick = "popupS19()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">8:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday20" onclick = "popupS20()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">9:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday21" onclick = "popupS21()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">10:00 PM</td>
+        <td class="ec"><button type = "button" id = "Wednesday22" onclick = "popupW22()" value="Add Event">Add Event</button></td>
+      </tr>
+      <tr>
+        <td class="time">11:00 PM</td>
+        <td class="ec"><button type = "button" id = "Saturday23" onclick = "popupS23()" value="Add Event">Add Event</button></td>
+      </tr>
+    </table>
+
+    <div class="center">
+      <br><br>
+      <button class ="left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  <br><br>
+</center>
+</body>
+</html>
